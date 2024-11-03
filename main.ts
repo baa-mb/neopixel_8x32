@@ -367,11 +367,11 @@ basic.forever(() => {
         basic.pause(strip_pause)
         // arr_neop_strips[0].showRainbow(1, 360)
         runden++;
-        if (runden == max_runden) {
-            arr_neop_strips[0].clear();
-            basic.showString(" ");
-            // power.lowPowerRequest()
-        }
+        // if (runden == max_runden) {
+        //     arr_neop_strips[0].clear();
+        //     basic.showString(" ");
+        //     // power.lowPowerRequest()
+        // }
     }
 })
 
