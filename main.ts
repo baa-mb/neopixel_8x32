@@ -140,7 +140,7 @@ function init_alphabet() {
 
 // }
 input.onButtonPressed(Button.A, function () {
-    power.fullPowerOn(FullPowerSource.A)
+    // power.fullPowerOn(FullPowerSource.A)
     strip_helligkeit = Math.min(strip_helligkeit + 25, 255);;
     arr_neop_strips[0].setBrightness(strip_helligkeit)
     basic.showNumber(strip_helligkeit);
@@ -350,7 +350,7 @@ const vers = 2021;
 // test("fgjkpqyz");
 // test("ABCabcöäü")
 // test(0,"Aber das ist falsch. ")
-test(0, "xDIGITALE GRUNDBILDUNG MIT DIGI.CASE - ")
+test(0, "DIGITALE GRUNDBILDUNG MIT DIGI.CASE - ")
 // test(0, "Digitale Grundbildung mit Micro:bit * ")
 // test("Das ist eine gute Möglichkeite * ");
 let runden: number = 0;
@@ -367,11 +367,10 @@ basic.forever(() => {
         basic.pause(strip_pause)
         // arr_neop_strips[0].showRainbow(1, 360)
         runden++;
-        if (runden >= max_runden) {
+        if (runden == max_runden) {
             arr_neop_strips[0].clear();
-            arr_neop_strips[0].show();
             basic.showString(" ");
-            power.lowPowerRequest()
+            // power.lowPowerRequest()
         }
     }
 })
