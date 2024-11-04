@@ -336,7 +336,7 @@ let bst_muster = [
 let bst_reihe: string = "";
 strip_helligkeit = 25;
 // aucha scrollspeed
-strip_pause = 300;
+strip_pause = 250;
 let arr_zeichen: number[][];
 neo_strip_anzahl = 1
 // ende variable
@@ -350,7 +350,7 @@ const vers = 2021;
 // test("fgjkpqyz");
 // test("ABCabcöäü")
 // test(0,"Aber das ist falsch. ")
-test(0, "DIGITALE GRUNDBILDUNG MIT DIGI.CASE - ")
+test(0, "DIGITALE GRUNDBILDUNG MIT DIGI.CASE SEK1 * ")
 // test(0, "Digitale Grundbildung mit Micro:bit * ")
 // test("Das ist eine gute Möglichkeite * ");
 let runden: number = 0;
